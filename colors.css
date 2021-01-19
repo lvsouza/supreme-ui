@@ -1,0 +1,59 @@
+:root {
+    --primary: #013B65;
+    --secondary: #6FCF97;
+    --border-color: #afafaf;
+    --border-color-error: #a01414;
+    --background-error: #ff0000a8;
+}
+
+.background-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.background-secondary {
+    background-color: var(--secondary);
+}
+
+.background-white {
+    background-color: white;
+}
+
+.background-error {
+    background-color: var(--background-error);
+    color: white;
+}
+
+
+.border-color {
+    border-color: var(--border-color);
+}
+
+.border-color-black {
+    border-color: black;
+}
+
+.border-color-error {
+    border-color: var(--border-color-error)!important;
+}
+
+.border-color-none {
+    border-color: transparent;
+}
+
+.border-thin-gray {
+    border: thin solid gray;
+}
+
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-black {
+    color: black;
+}

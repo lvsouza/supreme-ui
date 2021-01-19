@@ -1,0 +1,34 @@
+
+/* Fade in animation code */
+@keyframes animation-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade in animation code */
+@keyframes animation-translate-y {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade in animation */
+.fade-in {
+    animation-name: animation-fade-in;
+    animation-duration: .2s;
+}
+
+/* Franslate y animation */
+.translate-y {
+    animation-name: animation-translate-y;
+    animation-duration: .5s;
+}

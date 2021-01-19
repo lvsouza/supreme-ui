@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+@import "./animations.css";
+@import "./paddings.css";
+@import "./margins.css";
+@import "./opacity.css";
+@import "./shadows.css";
+@import "./colors.css";
+@import "./radius.css";
+@import "./fonts.css";
+@import "./flexs.css";
+@import "./texts.css";
+/* Vars*/
+
+:root {
+    --default-font: 'Roboto', sans-serif;
+    --default-outline: 1px solid var(--primary);
+    /** Sizes **/
+    --size-xxs: 1px;
+    --size-xs: 4px;
+    --size-s: 8px;
+    --size-m: 16px;
+    --size-g: 24px;
+    --size-xg: 32px;
+}
+
+/* CSS base */
+
+* {
+    font-family: var(--default-font);
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: var(--default-outline);
+    outline-style: auto;
+}
+
+html, body, #root {
+    overflow: -moz-hidden-unscrollable;
+    background-color: transparent;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+}
+
+#root {
+    overflow: auto;
+}
+
+div {
+    background-color: var(--color-transparent);
+    flex-direction: column;
+    display: flex;
+}
+
+a {
+    cursor: pointer;
+    color: #0035ff;
+}
+
+button:focus, button:hover, a:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+label, button {
+    cursor: pointer;
+}
+
+.border-thin {
+    border: thin solid;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.degrade {
+    background: linear-gradient(250.11deg, var(--primary) -4.99%, rgba(255, 255, 255, 0) 100%), linear-gradient(249.73deg, rgba(1, 59, 101, 0) 0%, var(--secondary) 87.55%);
+}
+
+/* Ajusta o scroll de todos os elementos. */
+
+::-webkit-scrollbar {
+    height: var(--size-s);
+    width: var(--size-s);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: var(--size-s);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0087e7c2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0065AE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #005491;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #003256;
+}

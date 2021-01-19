@@ -1,0 +1,12 @@
+:root {
+    --shadow-none: none;
+    --shadow-soft: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-none {
+    box-shadow: var(--shadow-none);
+}
+
+.shadow-soft {
+    box-shadow: var(--shadow-soft);
+}
