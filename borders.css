@@ -1,0 +1,15 @@
+.border-radius-none {
+    border-radius: var(--size-none);
+}
+
+.border-radius {
+    border-radius: var(--size-xs);
+}
+
+.border-radius-soft {
+    border-radius: var(--size-xs);
+}
+
+.border-none {
+    border: none;
+}

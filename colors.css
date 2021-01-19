@@ -1,59 +1,57 @@
 :root {
-    --primary: #013B65;
-    --secondary: #6FCF97;
-    --border-color: #afafaf;
-    --border-color-error: #a01414;
-    --background-error: #ff0000a8;
+    --color-primary: #013B65;
+    --color-secondary: #6FCF97;
+    --color-success: #1A5CB4;
+    /*  */
+    --color-background-error: #ff0000a8;
+    --color-background: #fafafa;
+    --color-border: #afafaf;
+    --color-error: #B10000;
+    /*  */
+    --color-text-white: #fff;
+    --color-text: #C4C4C4;
 }
 
-.background-primary {
-    background-color: var(--primary);
-    color: white;
+.background {
+    background-color: var(--color-background);
 }
 
-.background-secondary {
-    background-color: var(--secondary);
+.background-transparent {
+    background-color: transparent;
 }
 
-.background-white {
-    background-color: white;
+.background-success {
+    background-color: var(--color-success);
 }
 
 .background-error {
-    background-color: var(--background-error);
-    color: white;
+    background-color: var(--color-background-error);
 }
 
-
-.border-color {
-    border-color: var(--border-color);
+.background-error-hover:hover {
+    background-color: var(--color-background-error);
 }
 
-.border-color-black {
-    border-color: black;
+.background-primary {
+    background-color: var(--color-primary);
 }
 
-.border-color-error {
-    border-color: var(--border-color-error)!important;
+.text-color {
+    color: var(--color-text);
 }
 
-.border-color-none {
-    border-color: transparent;
+.text-white {
+    color: var(--color-text-white);
 }
-
-.border-thin-gray {
-    border: thin solid gray;
-}
-
 
 .text-primary {
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
-.text-secondary {
-    color: var(--secondary);
+.text-success {
+    color: var(--color-success);
 }
 
-.text-black {
-    color: black;
+.text-error {
+    color: var(--color-error);
 }
