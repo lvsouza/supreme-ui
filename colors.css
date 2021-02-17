@@ -4,7 +4,8 @@
     --color-success: #1A5CB4;
     /*  */
     --color-background-error: #ff0000a8;
-    --color-background: #fafafa;
+    --color-background-paper: #fafafa;
+    --color-background: #f0f2f5;
     --color-border: #afafaf;
     --color-error: #B10000;
     /*  */
@@ -14,6 +15,10 @@
 
 .background {
     background-color: var(--color-background);
+}
+
+.background-paper {
+    background-color: var(--color-background-paper);
 }
 
 .background-transparent {
@@ -34,6 +39,10 @@
 
 .background-primary {
     background-color: var(--color-primary);
+}
+
+.border-color-primary {
+    border-color: var(--color-primary);
 }
 
 .text-color {

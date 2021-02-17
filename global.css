@@ -43,7 +43,7 @@
     -moz-user-select: -moz-none;
     font-family: var(--font-family);
     font-weight: var(--font-weight-m);
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 *:focus {
@@ -71,6 +71,10 @@ div, nav, form {
     background-color: transparent;
 }
 
+body, input, button, textarea, div, nav, form, label, h1, h2, h3, h4, h5, h6, span {
+    color: var(--color-text);
+}
+
 body, input, button, textarea {
     font: var(--font-weight-m) var(--font-size-g) var(--font-family);
 }
@@ -86,8 +90,8 @@ input, textarea, select {
 }
 
 a {
-    cursor: pointer;
     color: var(--color-success);
+    cursor: pointer;
 }
 
 button:focus, button:hover, a:hover {

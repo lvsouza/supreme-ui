@@ -99,8 +99,8 @@
 }
 
 .flex-content-center {
-    justify-content: center;
     -webkit-box-pack: center;
+    justify-content: center;
     -ms-flex-pack: center;
 }
 

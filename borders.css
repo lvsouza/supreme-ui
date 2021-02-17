@@ -10,6 +10,10 @@
     border-radius: var(--size-xs);
 }
 
+.border-thin {
+    border: thin solid var(--color-primary);
+}
+
 .border-none {
     border: none;
 }
