@@ -52,7 +52,7 @@
 }
 
 html, body, #root {
-    background-color: transparent;
+    background-color: var(--color-background);
     flex-direction: column;
     overflow: hidden;
     height: 100vh;
@@ -79,14 +79,46 @@ body, input, button, textarea {
     font: var(--font-weight-m) var(--font-size-g) var(--font-family);
 }
 
+input[type=checkbox] {
+    padding: unset;
+    cursor: pointer;
+    width: var(--size-g);
+    -moz-appearance: none;
+    height: var(--size-g);
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--color-primary);
+}
+
+input[type=checkbox]:checked:hover {
+    filter: brightness(0.8);
+}
+
+input[type=checkbox]:checked:after {
+    margin-top: calc(var(--size-m) - calc(var(--size-m) * 0.85));
+    margin-left: calc(var(--size-g) / 3);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: var(--size-xs);
+    height: var(--size-s);
+    display: block;
+    content: "";
+
+    border: solid white;
+    border-width: 0 var(--size-xxs) var(--size-xxs) 0;
+}
+
 input, textarea, select {
+    border: var(--size-xxs) solid var(--color-border);
     background-color: var(--color-background-bars);
     border-radius: var(--size-xs);
-    border: var(--input-border);
     padding: var(--padding-s);
     padding-right: var(--padding-xs);
     padding-left: var(--padding-xs);
-    color: var(--color-text-white);
 }
 
 a {
