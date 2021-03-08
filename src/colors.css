@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #013B65;
+    --color-primary: #fb1b1b;
     --color-secondary: #6FCF97;
     --color-success: #1A5CB4;
     /*  */
@@ -10,7 +10,7 @@
     --color-error: #B10000;
     /*  */
     --color-text-white: #fff;
-    --color-text: #C4C4C4;
+    --color-text: #000;
 }
 
 .background {

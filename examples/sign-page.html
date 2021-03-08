@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1080, initial-scale=1.0">
+  <title>Examples</title>
+
+  <link rel="stylesheet" href="./../src/global.css">
+</head>
+
+<body>
+
+  <main class="full-height full-width display-flex">
+    <div class="flex-content-center flex-items-center flex1 flex-column">
+      <div class="padding-g shadow-m border-radius-soft flex-column flex-items-center background-paper">
+        <h2>Fazer login</h2>
+
+        <div class="margin-top-m">
+          <form class="login-form flex-column" onSubmit={handleSubmit}>
+            <input required type="email" minLength={2} placeholder="Digite seu email" class="padding-m font-size-m" />
+
+            <input required minLength={2} type="password" placeholder="Digite sua senha"
+              class="padding-m font-size-m margin-top-s" />
+
+            <label class="font-size-m margin-top-s padding-top-s padding-bottom-s display-flex flex-items-center">
+              <input type="checkbox" class="margin-right-s" />
+              Manter conectado
+            </label>
+
+            <button
+              class="padding-s margin-top-m background-primary border-radius-soft border-none text-white font-size-m text-uppercase">Entrar</button>
+          </form>
+
+        </div>
+
+        <a tabindex="0" class="font-size-m margin-top-m font-weight-g">
+          Cadastrar-se
+        </a>
+      </div>
+
+      <div class="absolute" style="bottom: 0;left: 0;">
+        <label class="font-size-m padding-g display-flex flex-items-center">
+          <input id="toggle-dark-mode-check-box" type="checkbox" defaultChecked="(() => isDark)()"
+            class="margin-right-s" onchange="toggleDarkMode(event.target.checked)" />
+          Tema escuro
+        </label>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+<script>
+  let isDark = localStorage.getItem('dark-mode') === 'true';
+
+  function toggleDarkMode(isDark) {
+    if (isDark) {
+      document.documentElement.style.setProperty('--color-background-paper', '#3a3a3a');
+      document.documentElement.style.setProperty('--color-background', '#1b1b1b');
+      document.documentElement.style.setProperty('--color-primary', '#ec1414');
+      document.documentElement.style.setProperty('--color-border', '#8c8c8c');
+      document.documentElement.style.setProperty('--color-text', '#fff');
+    } else {
+      document.documentElement.style.setProperty('--color-background-paper', '#fafafa');
+      document.documentElement.style.setProperty('--color-background', '#f0f2f5');
+      document.documentElement.style.setProperty('--color-primary', '#fb1b1b');
+      document.documentElement.style.setProperty('--color-border', '#afafaf');
+      document.documentElement.style.setProperty('--color-text', '#000');
+    }
+
+    localStorage.setItem('dark-mode', String(isDark));
+  }
+
+  toggleDarkMode(isDark);
+
+  document.getElementById('toggle-dark-mode-check-box').checked = isDark;
+
+</script>
+
+</html>
