@@ -1,17 +1,3 @@
-@import './animations.css';
-@import './positions.css';
-@import './z-indexes.css';
-@import './paddings.css';
-@import './opacitys.css';
-@import './outlines.css';
-@import './shadows.css';
-@import './borders.css';
-@import './margins.css';
-@import './colors.css';
-@import './events.css';
-@import './flexs.css';
-@import './fonts.css';
-@import './hrs.css';
 :root {
     /*
         Font default 16px
@@ -232,3 +218,20 @@ label, button, input[type="button"], input[type="submit"] {
 ::-webkit-scrollbar-thumb:active {
     background-color: var(--color-background-panels);
 } */
+
+/* Imports  */
+
+@import './animations.css';
+@import './positions.css';
+@import './z-indexes.css';
+@import './paddings.css';
+@import './opacitys.css';
+@import './outlines.css';
+@import './shadows.css';
+@import './borders.css';
+@import './margins.css';
+@import './colors.css';
+@import './events.css';
+@import './flexs.css';
+@import './fonts.css';
+@import './hrs.css';
