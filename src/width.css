@@ -1,0 +1,15 @@
+.full-width {
+  width: var(--size-fill);
+}
+
+.full-height {
+  height: var(--size-fill);
+}
+
+.width-45 {
+  width: 45%;
+}
+
+.height-45 {
+  height: 45%;
+}
