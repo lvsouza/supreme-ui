@@ -25,6 +25,7 @@
   user-select: none;
   -ms-user-select: none;
   box-sizing: border-box;
+  font-size: var(--size-m);
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
   font-family: var(--font-family);
