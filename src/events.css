@@ -1,15 +1,15 @@
 .no-events {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .events-unset {
-    pointer-events: unset;
+  pointer-events: unset;
 }
 
 .events-all {
-    pointer-events: all;
+  pointer-events: all;
 }
 
 .events-borders-only {
-    pointer-events: stroke;
+  pointer-events: stroke;
 }

@@ -1,11 +1,11 @@
 .absolute {
-    position: absolute;
+  position: absolute;
 }
 
 .fixed {
-    position: fixed;
+  position: fixed;
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
