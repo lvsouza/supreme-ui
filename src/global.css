@@ -1,3 +1,22 @@
+/* Imports  */
+
+@import './animations.css';
+@import './positions.css';
+@import './z-indexes.css';
+@import './paddings.css';
+@import './opacitys.css';
+@import './outlines.css';
+@import './shadows.css';
+@import './borders.css';
+@import './margins.css';
+@import './colors.css';
+@import './cursor.css';
+@import './events.css';
+@import './flexs.css';
+@import './fonts.css';
+@import './width.css';
+@import './grid.css';
+@import './hrs.css';
 :root {
   /*
       Font default 16px
@@ -19,15 +38,16 @@
 }
 
 * {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*  */
   margin: 0;
   padding: 0;
   outline: none;
-  user-select: none;
-  -ms-user-select: none;
   box-sizing: border-box;
   font-size: var(--size-m);
-  -webkit-user-select: none;
-  -moz-user-select: -moz-none;
   font-family: var(--font-family);
   font-weight: var(--font-weight-m);
   -webkit-font-smoothing: antialiased;
@@ -52,10 +72,10 @@ html, body, #root {
 }
 
 div, nav, form {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   background-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body, input, button, textarea, div, nav, form, label, h1, h2, h3, h4, h5, h6, span {
@@ -207,23 +227,3 @@ label, button, input[type="button"], input[type="submit"] {
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--color-scrollbar);
 }
-
-/* Imports  */
-
-@import './animations.css';
-@import './positions.css';
-@import './z-indexes.css';
-@import './paddings.css';
-@import './opacitys.css';
-@import './outlines.css';
-@import './shadows.css';
-@import './borders.css';
-@import './margins.css';
-@import './colors.css';
-@import './cursor.css';
-@import './events.css';
-@import './flexs.css';
-@import './fonts.css';
-@import './width.css';
-@import './grid.css';
-@import './hrs.css';

@@ -1,4 +1,4 @@
-body, [is-dark="false"] {
+:root, [is-dark="false"] {
   --color-primary: #fb1b1b;
   --color-secondary: #6FCF97;
   --color-success: #1A5CB4;
@@ -15,7 +15,7 @@ body, [is-dark="false"] {
   --color-scrollbar: #cecece;
 }
 
-[is-dark="true"] {
+:root, [is-dark="true"] {
   --color-primary: #ec1414;
   --color-secondary: #6FCF97;
   --color-success: #1A5CB4;
