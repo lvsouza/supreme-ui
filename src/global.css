@@ -53,11 +53,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-*:focus {
-  outline: var(--outline-soft);
-  outline-style: auto;
-}
-
 html, body, #root {
   background-color: var(--color-background);
   flex-direction: column;

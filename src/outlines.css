@@ -1,6 +1,11 @@
 :root {
+  --color-outline: var(--color-primary);
   --outline-none: none;
-  --outline-soft: var(--size-xxs) solid var(--color-primary);
+}
+
+*:focus {
+  outline: var(--color-outline);
+  outline-style: auto;
 }
 
 .outline-none {
@@ -8,5 +13,5 @@
 }
 
 .outline-soft {
-  outline: var(--outline-soft);
+  outline: var(---color-outline);
 }

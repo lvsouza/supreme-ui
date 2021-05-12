@@ -7,7 +7,7 @@ module.exports = {
   mode: 'production',
   context: __dirname,
   entry: {
-    "clean-ui": path.resolve(__dirname, '..', 'src', 'global.css')
+    "supreme-ui": path.resolve(__dirname, '..', 'src', 'global.css')
   },
   module: {
     rules: [

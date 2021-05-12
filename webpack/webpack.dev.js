@@ -11,7 +11,7 @@ module.exports = {
   mode: 'development',
   context: __dirname,
   entry: {
-    "clean-ui": path.resolve(__dirname, '..', 'src', 'global.css')
+    "supreme-ui": path.resolve(__dirname, '..', 'src', 'global.css')
   },
   module: {
     rules: [
@@ -36,7 +36,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, '..', 'dist-dev'),
     port: portFinderSync.getPort(3000),
     // writeToDisk: true,
-    liveReload: false,
+    liveReload: true,
     hotOnly: true,
     inline: true,
     hot: true,
@@ -51,12 +51,4 @@ module.exports = {
       // timings: false,
     }
   },
-  optimization: {
-    minimize: false,
-    minimizer: [
-      new CssMinimizerPlugin({
-        minify: CssMinimizerPlugin.cssoMinify,
-      }),
-    ],
-  }
 }
