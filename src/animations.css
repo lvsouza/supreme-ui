@@ -53,3 +53,36 @@
   animation-name: animation-translate-in-y;
   animation-duration: .5s;
 }
+
+@keyframes skeleton-glow {
+  from {
+    background: rgba(206, 217, 224, 0.2);
+    border-color: rgba(206, 217, 224, 0.2);
+  }
+  to {
+    background: rgba(92, 112, 128, 0.2);
+    border-color: rgba(92, 112, 128, 0.2);
+  }
+}
+
+.skeleton {
+  -webkit-animation: 1000ms linear infinite alternate skeleton-glow;
+  animation: 1000ms linear infinite alternate skeleton-glow;
+  background: rgba(206, 217, 224, 0.2);
+  background-clip: padding-box !important;
+  border-color: rgba(206, 217, 224, 0.2) !important;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  color: transparent !important;
+  cursor: default;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.skeleton::before, .skeleton::after, .skeleton * {
+  visibility: hidden !important;
+}
