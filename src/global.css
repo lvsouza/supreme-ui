@@ -1,5 +1,4 @@
-/* Imports  */
-
+/* Internal imports  */
 @import './animations.css';
 @import './positions.css';
 @import './z-indexes.css';
@@ -222,3 +221,5 @@ label, button, input[type="button"], input[type="submit"] {
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--color-scrollbar);
 }
+/* External imports  */
+@import './../node_modules/normalize.css/normalize.css';
