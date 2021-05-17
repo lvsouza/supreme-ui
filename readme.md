@@ -1,12 +1,12 @@
 # Supreme ui
 
-A simples and clean css framework.
+A simple and clean css framework.
 
 <br>
 <br>
 
 ## Customize your theme
-------
+
 | Variable | Default value |
 |---|---|
 | **Basic** |
@@ -29,17 +29,8 @@ A simples and clean css framework.
 <br>
 
 ## Instalation
-### CDN links(recomended)
 
-```html
-<!-- Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
-
-<!-- Supreme ui -->
-<link rel="stylesheet" href="https://unpkg.com/supreme-ui@latest/dist/supreme-ui.css">
-```
-
-### Npm
+### Npm (recomended)
 
 1. Installing package:
     ```bash
@@ -50,6 +41,17 @@ A simples and clean css framework.
 1. Import to your project:
     ```js
     // In some *.ts, *.js...
-    import 'path/to/node_modules/supreme-ui/supreme-ui.css';
+    import 'supreme-ui/dist/supreme-ui.css';
     ```
 
+### CDN links
+
+* Fonts
+  ```html
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+  ```
+
+* Supreme ui
+  ```html
+  <link rel="stylesheet" href="https://unpkg.com/supreme-ui@latest/dist/supreme-ui.css">
+  ```

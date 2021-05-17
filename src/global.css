@@ -34,13 +34,15 @@
   --size-g: 2.2rem;
   --size-xg: 3rem;
   --size-fill: 100%;
+  /*  */
+  --user-select: all;
 }
 
 * {
-  -moz-user-select: -moz-none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: var(--user-select);
+  -moz-user-select: var(--user-select);
+  -ms-user-select: var(--user-select);
+  user-select: var(--user-select);
   /*  */
   margin: 0;
   padding: 0;
