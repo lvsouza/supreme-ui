@@ -1,4 +1,5 @@
 /* Internal imports  */
+
 @import './animations.css';
 @import './positions.css';
 @import './z-indexes.css';
@@ -11,6 +12,7 @@
 @import './colors.css';
 @import './cursor.css';
 @import './events.css';
+@import './block.css';
 @import './flexs.css';
 @import './fonts.css';
 @import './width.css';
@@ -18,10 +20,10 @@
 @import './hrs.css';
 :root {
   /*
-      Font default 16px
-      16 * 0.6 = 9.6px
+    Font default 16px
+    16 * 0.6 = 9.6px
 
-      1rem = 9.6px
+    1rem = 9.6px
   */
   font-size: 50%;
   /* *** */
@@ -35,7 +37,7 @@
   --size-xg: 3rem;
   --size-fill: 100%;
   /*  */
-  --user-select: all;
+  --user-select: auto;
 }
 
 * {
@@ -223,5 +225,7 @@ label, button, input[type="button"], input[type="submit"] {
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--color-scrollbar);
 }
+
 /* External imports  */
+
 @import './../node_modules/normalize.css/normalize.css';
