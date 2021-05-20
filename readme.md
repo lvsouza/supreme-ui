@@ -7,22 +7,26 @@ A simple and clean css framework.
 
 ## Customize your theme
 
-| Variable | Default value |
-|---|---|
-| **Basic** |
-| --color-primary           |`#fb1b1b`  |
-| --color-secondary         |`#6FCF97`  |
-| --color-success           |`#1A5CB4`  |
-| --color-outline           |`#fb1b1b`  |
-| --color-border            |`#afafaf`  |
-| --color-text              |`#000`     |
-| **Background** |
-| --color-background-error  |`#ff0000a8`|
-| --color-background-paper  |`#fafafa`  |
-| --color-background        |`#f0f2f5`  |
-| **Others** |
-| --color-scrollbar         |`#cecece`  |
-| --color-error             |`#B10000`  |
+| Variable                          | Default value |
+|-----------------------------------|---------------|
+| **Basic**                         |               |
+| --color-primary                   |`#fb1b1b`      |
+| --color-primary-contrast          |`#ffffff`      |
+| --color-secondary                 |`#6FCF97`      |
+| --color-secondary-contrast        |`#ffffff`      |
+| --color-success                   |`#1A5CB4`      |
+| --color-success-contrast          |`#ffffff`      |
+| --color-outline                   |`#fb1b1b`      |
+| --color-border                    |`#afafaf`      |
+| --color-text                      |`#000`         |
+| **Background**                    |               |
+| --color-background-error          |`#ff0000a8`    |
+| --color-background-error-contrast |`#ffffff`      |
+| --color-background-paper          |`#fafafa`      |
+| --color-background                |`#f0f2f5`      |
+| **Others**                        |               |
+| --color-scrollbar                 |`#cecece`      |
+| --color-error                     |`#B10000`      |
 ------
 
 <br>

@@ -1,9 +1,13 @@
 :root {
   --color-primary: #fb1b1b;
+  --color-primary-contrast: #ffffff;
   --color-secondary: #6FCF97;
+  --color-secondary-contrast: #ffffff;
   --color-success: #1A5CB4;
+  --color-success-contrast: #ffffff;
   /*  */
   --color-background-error: #ff0000a8;
+  --color-background-error-contrast: #ffffff;
   --color-outline: var(--color-primary);
   --color-background-paper: #fafafa;
   --color-background: #f0f2f5;
@@ -30,10 +34,12 @@
 
 .background-success {
   background-color: var(--color-success);
+  color: var(--color-success-contrast);
 }
 
 .background-error {
   background-color: var(--color-background-error);
+  color: var(--color-background-error-contrast);
 }
 
 .background-error-hover:hover {
@@ -42,6 +48,7 @@
 
 .background-primary {
   background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
 }
 
 .border-color-primary {
