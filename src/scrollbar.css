@@ -1,0 +1,33 @@
+::-webkit-scrollbar {
+  height: var(--size-s);
+  width: var(--size-s);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: var(--size-s);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+  border-radius: var(--size-xs);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-scrollbar);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-scrollbar);
+}

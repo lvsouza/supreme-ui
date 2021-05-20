@@ -1,0 +1,147 @@
+html, body, #root {
+  background-color: var(--color-background);
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+
+div, nav, form {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body, input, button, textarea, div, nav, form, label, h1, h2, h3, h4, h5, h6, span {
+  color: var(--color-text);
+}
+
+body, input, button, textarea {
+  font: var(--font-weight-m) var(--font-size-g) var(--font-family);
+}
+
+input[type=checkbox] {
+  padding: unset;
+  cursor: pointer;
+  width: var(--size-g);
+  -moz-appearance: none;
+  height: var(--size-g);
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+  background-color: var(--color-primary);
+}
+
+input[type=checkbox]:hover {
+  filter: brightness(0.8);
+}
+
+input[type=checkbox]:checked:after {
+  margin-top: calc(var(--size-m) - calc(var(--size-m) * 0.85));
+  margin-left: calc(var(--size-g) / 3);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: var(--size-xs);
+  height: var(--size-s);
+  display: block;
+  content: "";
+  border: solid white;
+  border-width: 0 var(--size-xxs) var(--size-xxs) 0;
+}
+
+input[type=radio] {
+  padding: unset;
+  cursor: pointer;
+  border-radius: 50%;
+  width: var(--size-g);
+  -moz-appearance: none;
+  height: var(--size-g);
+  -webkit-appearance: none;
+}
+
+input[type=radio]:checked {
+  background-color: white;
+}
+
+input[type=radio]:hover {
+  filter: brightness(0.8);
+}
+
+input[type=radio]:checked:after {
+  width: 49%;
+  height: 49%;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: var(--size-xs) solid white;
+  background-color: var(--color-primary);
+}
+
+input, textarea, select, button {
+  padding: var(--padding-s);
+  border-radius: var(--size-xs);
+  padding-left: var(--padding-xs);
+  padding-right: var(--padding-xs);
+  background-color: var(--color-background-paper);
+  border: var(--size-xxs) solid var(--color-border);
+}
+
+a {
+  color: var(--color-success);
+  cursor: pointer;
+}
+
+button:focus, button:hover, a:hover {
+  opacity: 0.9;
+}
+
+input:disabled, textarea:disabled, select:disabled, button:disabled {
+  opacity: 0.5;
+}
+
+button:active, input[type="button"]:active, input[type="submit"]:active {
+  opacity: 0.8;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+label, button, input[type="button"], input[type="submit"] {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-s);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-s);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-m);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-m);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-m);
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-g);
+}
