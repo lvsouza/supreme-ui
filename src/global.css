@@ -11,9 +11,9 @@
 @import './shadows.css';
 @import './borders.css';
 @import './margins.css';
-@import './colors.css';
 @import './cursor.css';
 @import './events.css';
+@import './theme.css';
 @import './block.css';
 @import './flexs.css';
 @import './fonts.css';

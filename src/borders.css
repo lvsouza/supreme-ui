@@ -1,11 +1,3 @@
-.border-radius-none {
-  border-radius: var(--size-none);
-}
-
-.border-radius {
-  border-radius: var(--size-xs);
-}
-
 .border-radius-soft {
   border-radius: var(--size-xs);
 }
@@ -16,4 +8,40 @@
 
 .border-none {
   border: none;
+}
+
+.border-radius-none {
+  border-radius: var(--size-none);
+}
+
+.border-radius-xxs {
+  border-radius: var(--size-xxs);
+}
+
+.border-radius-xs {
+  border-radius: var(--size-xs);
+}
+
+.border-radius-s {
+  border-radius: var(--size-s);
+}
+
+.border-radius-sm {
+  border-radius: var(--size-sm);
+}
+
+.border-radius-m {
+  border-radius: var(--size-m);
+}
+
+.border-radius-g {
+  border-radius: var(--size-g);
+}
+
+.border-radius-xg {
+  border-radius: var(--size-xg);
+}
+
+.border-radius-fill {
+  border-radius: var(--size-fill);
 }
