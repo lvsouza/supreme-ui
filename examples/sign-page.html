@@ -25,18 +25,18 @@
         <h2>Fazer login</h2>
 
         <div class="margin-top-m">
-          <form class="login-form flex-column" onSubmit={handleSubmit}>
+          <form class="login-form flex-column flex-gap-sm" onSubmit={handleSubmit}>
             <input required type="email" minLength={2} placeholder="Digite seu email" class="padding-m font-size-m" />
 
             <input required minLength={2} type="password" placeholder="Digite sua senha"
-              class="padding-m font-size-m margin-top-s" />
+              class="padding-m font-size-m" />
 
-            <label class="font-size-m margin-top-s padding-top-s padding-bottom-s display-flex flex-items-center">
+            <label class="font-size-m display-flex flex-items-center">
               <input type="checkbox" class="margin-right-s" />
               Manter conectado
             </label>
 
-            <button class="margin-top-m background-primary border-none text-uppercase">Entrar</button>
+            <button class="background-primary border-none text-uppercase">Entrar</button>
           </form>
         </div>
 
