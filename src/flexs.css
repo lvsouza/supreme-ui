@@ -152,6 +152,18 @@
   -ms-flex-pack: end;
 }
 
+.flex-align-content-start {
+  align-content: flex-start;
+}
+
+.flex-align-content-center {
+  align-content: center;
+}
+
+.flex-align-content-end {
+  align-content: flex-end;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
